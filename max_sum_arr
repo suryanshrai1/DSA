@@ -1,0 +1,18 @@
+int maxSubArray(int* nums, int numsSize) {
+    int sum;
+    int i;
+    int j;
+    int max = -32768;
+    
+    for(i=0; i<numsSize; i++){
+        sum=0;
+        for(j=i; j<numsSize; j++){
+            sum= sum+ nums[j];
+        }
+        if(sum>max){
+            max= sum;
+        }
+        return max;
+    }
+    return 0;
+}
