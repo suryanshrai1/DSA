@@ -13,3 +13,4 @@ public class RepeatedSubstringChecker {
         System.out.println(checker.repeatedSubstringPattern("abcabcabcabc")); // true
     }
 }
+// Leetcode 459
