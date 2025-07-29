@@ -1,3 +1,4 @@
+// N-Queen Problem GFG
 public class NQueen {
 
     static final int N = 4;
