@@ -46,7 +46,7 @@ public class MaximumPathSum {  // Rename the class to MaxPathSum
         root.right.right = new TreeNode(6);
 
         // Create a MaxPathSum object and find the maximum path sum
-        MaxPathSum solution = new MaxPathSum();  // Change to MaxPathSum
+        MaximumPathSum solution = new MaximumPathSum();  // Change to MaxPathSum
         int result = solution.maxPathSum(root);
 
         // Print the result
