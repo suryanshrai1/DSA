@@ -42,6 +42,9 @@ class Solution {
 
 public class PairsWithGivenSum {
     public static void main(String[] args) {
+
+        Solution solution = new Solution();
+        
         // Create a doubly linked list: 1 <-> 2 <-> 3 <-> 4 <-> 5
         Node head = new Node(1);
         Node second = new Node(2);
