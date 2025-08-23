@@ -1,15 +1,15 @@
 import java.util.*;
 
-// Definition for a binary tree node.
-class Node {
-    int data;
-    Node left, right;
+// // Definition for a binary tree node.
+// class Node {
+//     int data;
+//     Node left, right;
 
-    Node(int item) {
-        data = item;
-        left = right = null;
-    }
-}
+//     Node(int item) {
+//         data = item;
+//         left = right = null;
+//     }
+// }
 
 public class BinaryTreeLevelOrderTraversal {
 

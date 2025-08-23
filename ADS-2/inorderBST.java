@@ -1,16 +1,5 @@
 import java.util.ArrayList;
 
-// Definition of a Node in the BST
-class Node {
-    int data;
-    Node left, right;
-
-    Node(int data) {
-        this.data = data;
-        left = right = null;
-    }
-}
-
 public class inorderBST {
     // Function to return a list containing the inorder traversal of the BST.
     ArrayList<Integer> inOrder(Node root) {

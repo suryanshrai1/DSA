@@ -25,5 +25,6 @@ public class EligibleForDisc {
             }
         }
         System.out.println(count);
+        sc.close();
     }
 }

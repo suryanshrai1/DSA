@@ -1,10 +1,10 @@
-
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
 
+// TreeNode definition
 class TreeNode {
     int val;
     TreeNode left;
@@ -15,42 +15,42 @@ class TreeNode {
     }
 }
 
+// Solution class with zigzag level order traversal
 class Solution {
     public List<List<Integer>> zigzagLevelOrder(TreeNode root) {
         List<List<Integer>> result = new ArrayList<>();
         if (root == null) {
             return result;
         }
+
         Queue<TreeNode> queue = new LinkedList<>();
         queue.offer(root);
-        int length = 0;
-        boolean bool = false;
+        boolean reverse = false;
+
         while (!queue.isEmpty()) {
-            length = queue.size();
-            List<Integer> sub = new ArrayList<>(length);
-            for (int i = 0; i < length; i++) {
-                TreeNode top = queue.poll();
-                sub.add(top.val);
-                if (top.left != null) {
-                    queue.offer(top.left);
-                }
-                if (top.right != null) {
-                    queue.offer(top.right);
-                }
+            int size = queue.size();
+            List<Integer> level = new ArrayList<>(size);
+
+            for (int i = 0; i < size; i++) {
+                TreeNode node = queue.poll();
+                level.add(node.val);
+
+                if (node.left != null) queue.offer(node.left);
+                if (node.right != null) queue.offer(node.right);
             }
-            if (bool) {
-                Collections.reverse(sub);
-            }
-            result.add(sub);
-            bool = !bool;
+
+            if (reverse) Collections.reverse(level);
+            result.add(level);
+            reverse = !reverse;
         }
         return result;
     }
 }
 
-public class ZigZagLevelOrder{
+// Main class
+public class ZigZagLevelOrder {
     public static void main(String[] args) {
-        // Create a sample binary tree
+        // Build a sample tree
         TreeNode root = new TreeNode(1);
         root.left = new TreeNode(2);
         root.right = new TreeNode(3);
@@ -59,11 +59,13 @@ public class ZigZagLevelOrder{
         root.right.left = new TreeNode(6);
         root.right.right = new TreeNode(7);
 
-        // Create an instance of Solution and call zigzagLevelOrder
         Solution solution = new Solution();
         List<List<Integer>> result = solution.zigzagLevelOrder(root);
 
-        // Print the result
-        System.out.println(result);
+        // Display output
+        System.out.println("Zigzag Level Order Traversal:");
+        for (List<Integer> level : result) {
+            System.out.println(level);
+        }
     }
 }
