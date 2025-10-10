@@ -31,7 +31,7 @@ public class BinaryTreePostOrderTraversal {
     }
 
     public static void main(String[] args) {
-        // Create the tree
+        // Creating the tree
         TreeNode root = new TreeNode(1);
         root.left = new TreeNode(2);
         root.right = new TreeNode(3);
@@ -42,7 +42,6 @@ public class BinaryTreePostOrderTraversal {
         BinaryTreePostOrderTraversal solution = new BinaryTreePostOrderTraversal();
         ArrayList<Integer> postOrderResult = solution.postOrder(root);
 
-        // Print the result
         System.out.println(postOrderResult);
     }
 }
