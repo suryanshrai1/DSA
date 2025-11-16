@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class CountSpecialSubstrings {
+public class CountSubstringsOfOnes  {
 
     public int numberOfSubstrings(String s) {
         int n = s.length();
