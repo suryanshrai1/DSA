@@ -1,1 +1,1 @@
-TriangleMinimumPathSum
+SubarrayXorCalculator
