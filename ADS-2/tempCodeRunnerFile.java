@@ -1,1 +1,1 @@
-SubarrayXorCalculator
+int m = sc.nextInt();
