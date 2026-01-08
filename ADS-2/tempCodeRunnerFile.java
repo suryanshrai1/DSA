@@ -1,1 +1,1 @@
-int m = sc.nextInt();
+CountSubarraysWithKOddNumbers
