@@ -3,7 +3,8 @@ public class MinimumWindowSubsequence {
     public String minWindow(String s1, String s2) {
         int n = s1.length();
         int m = s2.length();
-        if (m == 0) return "";
+        if (m == 0)
+            return "";
 
         int minLen = Integer.MAX_VALUE;
         int startIdx = -1;
