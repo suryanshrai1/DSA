@@ -91,7 +91,6 @@ public class SgTree {
                 arr[i] = val;
             }
         }
-
         sc.close();
     }
 }
