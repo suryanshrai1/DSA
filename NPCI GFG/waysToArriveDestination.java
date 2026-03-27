@@ -47,7 +47,6 @@ public class waysToArriveDestination {
                 }
             }
         }
-
         return (int) ways[V - 1];
     }
 }
