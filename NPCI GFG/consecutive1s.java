@@ -15,3 +15,5 @@ public class consecutive1s {
         return zeroCount + oneCount;
     }
 }
+
+
