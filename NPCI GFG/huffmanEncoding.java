@@ -46,7 +46,7 @@ public class huffmanEncoding {
             return res;
         }
 
-        //build tree
+        // build tree
         while (pq.size() > 1) {
             Node left = pq.poll();
             Node right = pq.poll();
@@ -57,7 +57,7 @@ public class huffmanEncoding {
 
         Node root = pq.poll();
 
-        //preorder traversal
+        // preorder traversal
         ArrayList<String> result = new ArrayList<>();
         generate(root, "", result);
 
@@ -65,11 +65,13 @@ public class huffmanEncoding {
     }
 
     private void generate(Node node, String code, ArrayList<String> res) {
-        if (node == null) return;
+        if (node == null)
+            return;
 
         // leaf node
         if (node.left == null && node.right == null) {
-            if (code.length() == 0) code = "0";
+            if (code.length() == 0)
+                code = "0";
             res.add(code);
             return;
         }
