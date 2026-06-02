@@ -66,7 +66,6 @@ public class maxProductSubset{
             a = (a * a) % MOD;
             b >>= 1;
         }
-
         return res;
     }
 }
