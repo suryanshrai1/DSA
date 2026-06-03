@@ -1,3 +1,5 @@
+import java.util.*;
+
 public class pairWithDiff {
     private int helper(int[] arr, int i, int k, int[] dp){
         if(i<=0) return 0;
