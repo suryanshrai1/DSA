@@ -1,6 +1,6 @@
 import java.util.ArrayDeque;
 
-public class binarySearchableCNt {
+public class binarySearchableCnt {
         static class Node {
         int l, r;
         long low, high;
