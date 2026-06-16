@@ -18,7 +18,6 @@ public class minCostToFillWt {
                 }
             }
         }
-
         return (dp[w] == INF) ? -1 : dp[w];
     }
 }
